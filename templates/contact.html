@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us
+{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+    <img src="/static/con2.jpeg" alt="">
+    <h2 class="my-4" style="
+    padding-left: 400px;
+">We Will Be Glad To Answer Your Questions</h2>
+</div>
+<div class="container my-4">
+    <form method="POST" action="contact/">
+        <!-- added -->
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" name = "name" class="form-label">Your Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+        <!-- added -->
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary my-4">Submit</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+{% endblock body %}
